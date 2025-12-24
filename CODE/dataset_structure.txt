@@ -1,0 +1,42 @@
+Dataset Structure for Crop–Weed Detection Project
+-------------------------------------------------
+
+The dataset is organized in YOLO format with separate folders for images and labels.
+Each image has a corresponding annotation file with the same filename.
+
+Root Directory:
+yolo_data/
+
+├── images/
+│   ├── train/
+│   │   ├── agri_0_1009.jpeg
+│   │   ├── agri_0_1017.jpeg
+│   │   ├── ...
+│   └── val/
+│       ├── agri_0_2034.jpeg
+│       ├── agri_0_2098.jpeg
+│       ├── ...
+
+├── labels/
+│   ├── train/
+│   │   ├── agri_0_1009.txt
+│   │   ├── agri_0_1017.txt
+│   │   ├── ...
+│   └── val/
+│       ├── agri_0_2034.txt
+│       ├── agri_0_2098.txt
+│       ├── ...
+
+Each label file follows YOLO annotation format:
+<class_id> <x_center> <y_center> <width> <height>
+
+Class Mapping:
+0 - Crop
+1 - Weed
+
+Image Resolution:
+512 x 512 pixels
+
+Dataset Split:
+- Training images: 1040
+- Validation images: 260

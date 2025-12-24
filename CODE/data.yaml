@@ -1,0 +1,7 @@
+path: /kaggle/working/yolo_data
+train: images/train
+val: images/val
+
+names:
+  0: crop
+  1: weed
